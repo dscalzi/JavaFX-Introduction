@@ -1,7 +1,6 @@
 package com.westhillcs.jfx.intro.fxml;
 
-import java.io.File;
-import java.io.FileInputStream;
+import java.io.InputStream;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -29,21 +28,19 @@ public class FXMLMain extends Application{
 	public void start(Stage primaryStage) throws Exception {
 		//Object to load and read the FXML
 		FXMLLoader loader = new FXMLLoader();
-		//Create a file which points to the FXML document.
-		File f = new File(getClass().getResource("GUILayout.fxml").getPath());
 		
 		VBox root;
 		
 		/*
-		 * Create a FileInputStream and use that to call the FXMLLoader's
+		 * Retrieve our fxml file as an InputStream and use that to call the FXMLLoader's
 		 * load method. Cast the object based on the Node you defined first
 		 * in your FXML file. In our case, we used a VBox.
 		 * 
 		 * This is a try-with-resource block. All it does is makes sure that
-		 * the FileInputStream is closed when we finish the try code, regardless of
+		 * the InputStream is closed when we finish the try code, regardless of
 		 * whether or not an exception is thrown. 
 		 */
-		try(FileInputStream fxmlStream = new FileInputStream(f)){
+		try(InputStream fxmlStream = getClass().getResourceAsStream("GUILayout.fxml")){
 			root = (VBox) loader.load(fxmlStream);
 		}
 		

@@ -1,7 +1,6 @@
 package com.westhillcs.jfx.intro.commentless.fxml;
 
-import java.io.File;
-import java.io.FileInputStream;
+import java.io.InputStream;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -21,11 +20,10 @@ public class FXMLMain extends Application{
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		FXMLLoader loader = new FXMLLoader();
-		File f = new File(getClass().getResource("GUILayout.fxml").getPath());
 		
 		VBox root;
 		
-		try(FileInputStream fxmlStream = new FileInputStream(f)){
+		try(InputStream fxmlStream = getClass().getResourceAsStream("GUILayout.fxml")){
 			root = (VBox) loader.load(fxmlStream);
 		}
 		
