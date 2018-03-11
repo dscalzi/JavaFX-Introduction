@@ -53,5 +53,16 @@ The project will now be added to eclipse.
 
 ### Contact ###
 
-* Daniel Scalzi / Chandan Sarkar
+|![Daniel Scalzi][dscalziimg]|![Chandan Sarkar][csarkarimg]|
+|:--------:|:--------:|
+| [Daniel Scalzi][@dscalzi] | [Chandan Sarkar][@csarkar] |
+
+* [Daniel Scalzi][dscalzicontact] / [Chandan Sarkar][csarkarcontact]
 * [Westhill Computer Science](http://westhillcs.com)
+
+[@dscalzi]: https://github.com/dscalzi
+[dscalziimg]: https://avatars0.githubusercontent.com/u/9703873?s=125
+[dscalzicontact]: https://github.com/dscalzi/JavaFX-Introduction/issues "Submit an Issue"
+[@csarkar]: https://github.com/csarkar373
+[csarkarimg]: https://avatars2.githubusercontent.com/u/20685389?s=125
+[csarkarcontact]: https://www.stamfordpublicschools.org/user/18483/contact "Contact Chandan Sarkar"
